@@ -1,0 +1,96 @@
+/* Reset de estilos para consistência */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4B0082;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para centralizar o conteúdo na página inicial */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Altera o alinhamento para o topo */
+    padding: 60px 20px 20px; /* Adiciona um padding-top maior para empurrar o conteúdo um pouco para cima */
+}
+
+.welcome-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; /* Garante que o quadrinho esteja no meio */
+}
+
+.welcome-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background-color: #4B0082;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .welcome-box {
+        padding: 15px;
+    }
+}               
